@@ -10,10 +10,10 @@ An automatic scrolling carousel similar to how `ScrollView` is used
 
 ## Supported Platforms
 
-* iOS 13.0
-* macOS 10.15
-* tvOS 13.0
-* watchOS 6.0
+* iOS 14.0
+* macOS 11.0
+* tvOS 14.0
+* watchOS 7.0
 
 ## Usage
 
