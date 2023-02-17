@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 class SlideshowViewModel<Data, ID>: ObservableObject where Data : RandomAccessCollection, ID : Hashable {
     
     /// external index
@@ -97,7 +97,7 @@ class SlideshowViewModel<Data, ID>: ObservableObject where Data : RandomAccessCo
     
 }
 
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 extension SlideshowViewModel where ID == Data.Element.ID, Data.Element : Identifiable {
     
     convenience init(_ data: Data,
@@ -112,7 +112,7 @@ extension SlideshowViewModel where ID == Data.Element.ID, Data.Element : Identif
     }
 }
 
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 extension SlideshowViewModel {
     
     var data: Data {
@@ -167,7 +167,7 @@ extension SlideshowViewModel {
 }
 
 // MARK: - private variable
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 extension SlideshowViewModel {
     
     private var isWrap: Bool {
@@ -200,7 +200,7 @@ extension SlideshowViewModel {
 }
 
 // MARK: - Offset Method
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 extension SlideshowViewModel {
     /// current offset value
     var offset: CGFloat {
@@ -233,7 +233,7 @@ extension SlideshowViewModel {
 }
 
 // MARK: - Drag Gesture
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 extension SlideshowViewModel {
     /// drag gesture of view
     var dragGesture: some Gesture {
@@ -291,7 +291,7 @@ extension SlideshowViewModel {
 }
 
 // MARK: - Receive Timer
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 extension SlideshowViewModel {
     
     /// timer change

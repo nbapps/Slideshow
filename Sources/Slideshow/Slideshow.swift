@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 public struct Slideshow<Data, ID, Content>: View where Data: RandomAccessCollection, ID: Hashable, Content: View {
     
     @ObservedObject
@@ -40,7 +40,7 @@ public struct Slideshow<Data, ID, Content>: View where Data: RandomAccessCollect
 }
 
 // MARK: - Initializers
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 extension Slideshow {
     
     /// Initializers
@@ -70,7 +70,7 @@ extension Slideshow {
     }
 }
 
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 extension Slideshow where ID == Data.Element.ID, Data.Element: Identifiable {
     
     /// Initializers
